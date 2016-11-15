@@ -17,6 +17,14 @@
 # - If the person enters a number that is not between 1 and 7, show an error
 #   message and ask for them to enter a number again.
 #############################################################################
+def week
+puts "Enter the number day of week"
+dayofweek = puts.chomp
+answer = gets.chomp
+while answer != 1..7
+  puts "enter a number again, between 1 and 7"
+end
+return week
 
 
 
@@ -35,7 +43,16 @@
 # - Use the method you made to sum the numbers
 # - Display the total in a nice message
 #############################################################################
+def total
+  while sumanswer < 6
+puts "Enter 5 numbers"
+numbers = gets.chomp
+sumanswer = gets.chomp
 
+array = [].inject(&:+).to_i
+puts array
+end
+return total
 
 
 
@@ -45,19 +62,32 @@
 # containing only words that have the desired length.  If no words have that
 # length, return an empty list.
 #############################################################################
-
-
-
-
+def wordslength
+words = [""]
+end
+return wordslength
 ##############################################################################
 # Make a method to take a list of letters and a single letter. Return true
 # if the single letter is found in the list, and false otherwise.
 #############################################################################
-
-
-
+def singleletter
+letters = []
+if letters.select {|str| str.include?('a')}
+return true
+else
+  return false
+end
+end
+return singleletter
 
 ##############################################################################
 # Make a method to take a word and a single letter. Return true
 # if the single letter is found in the word, and false otherwise.
 #############################################################################
+def letterfound
+  word = "string"
+  if word.include "i"
+    return true
+end
+end
+return letterfound
